@@ -14,8 +14,8 @@
     "ios": "expo start --ios",
     "test": "jest",
     "dev": "tsc --watch",
-    "prepublish": "yarn build",
-    "prepare": "yarn build"
+    "prepublish": "echo 'Skipping build for publish'",
+    "prepare": "echo 'Skipping build for prepare'"
   },
   "jest": {
     "preset": "jest-expo"
