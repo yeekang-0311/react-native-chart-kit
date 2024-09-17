@@ -119,6 +119,8 @@ var BarChart = /** @class */ (function (_super) {
                     return label;
                 }
         };
+        // Set labelHeight to 0 if it's NaN or undefined
+        labelHeight = (typeof labelHeight === 'undefined' || Number.isNaN(labelHeight)) ? 0 : labelHeight;
         return (<View style={style}>
         <Svg height={height+labelHeight} viewBox={`0 0 ${width + 30} ${height+labelHeight}`} width={width}>
           {this.renderDefs(__assign(__assign({}, config), this.props.chartConfig))}
