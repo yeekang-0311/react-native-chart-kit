@@ -70,10 +70,10 @@ var PieChart = /** @class */ (function (_super) {
             }
             return (<G key={Math.random()}>
           <Path d={c.sector.path.print()} fill={c.item.color}/>
-          {hasLegend ? (<Rect width="16px" height="16px" fill={c.item.color} rx={8} ry={8} x={_this.props.width / 2.5 - 24} y={-(_this.props.height / 2.5) +
+          {hasLegend ? (<Rect width="16px" height="16px" fill={c.item.color} rx={8} ry={8} x={_this.props.width / 4 - 24} y={-(_this.props.height / 2.5) +
                 ((_this.props.height * 0.8) / _this.props.data.length) * i +
                 12}/>) : null}
-          {hasLegend ? (<Text fill={c.item.legendFontColor} fontSize={c.item.legendFontSize} fontFamily={c.item.legendFontFamily} x={_this.props.width / 2.5} y={-(_this.props.height / 2.5) +
+          {hasLegend ? (<Text fill={c.item.legendFontColor} fontSize={c.item.legendFontSize} fontFamily={c.item.legendFontFamily} x={_this.props.width / 4} y={-(_this.props.height / 2.5) +
                 ((_this.props.height * 0.8) / _this.props.data.length) * i +
                 12 * 2}>
               {value + " " + c.item.name}
